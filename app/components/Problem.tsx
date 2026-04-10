@@ -24,11 +24,11 @@ export default function Problem() {
 
         {/* Quote block */}
         <div className="border-l-[3px] border-[#ffffff] bg-[rgba(255,255,255,0.08)] rounded-r-md p-6 mb-10 max-w-3xl">
-          <p className="italic text-[#ffffff] text-[18px] leading-relaxed">
+          <p className="italic text-[#ffffff] text-[20px] leading-[1.6]">
             &ldquo;We had the product. We had interest from their innovation team. Then nothing
             happened for months.&rdquo;
           </p>
-          <p className="text-[13px] text-[#A78FE4] mt-3">
+          <p className="text-[13px] text-[#A78FE4] mt-4">
             — A story I hear constantly from startups entering Japan
           </p>
         </div>
@@ -42,16 +42,16 @@ export default function Problem() {
             >
               <p className="text-[11px] font-medium text-[#A78FE4] mb-2">Pattern {p.id}</p>
               <h3 className="text-[16px] font-medium text-[#ffffff] mb-2">{p.title}</h3>
-              <p className="text-[13px] text-[rgba(255,255,255,0.7)] leading-relaxed">{p.body}</p>
+              <p className="text-[14px] text-[rgba(255,255,255,0.72)] leading-relaxed">{p.body}</p>
             </div>
           ))}
         </div>
 
         {/* Insight block */}
         <div className="border-l-[3px] border-[#A78FE4] bg-[rgba(255,255,255,0.08)] rounded-r-md p-6 max-w-3xl">
-          <p className="text-[15px] text-[rgba(255,255,255,0.85)] leading-relaxed">
+          <p className="text-[16px] text-[rgba(255,255,255,0.88)] leading-relaxed">
             This is why Japan requires a{" "}
-            <span className="font-medium text-[#ffffff]">long-game strategy</span> — not a sprint. The startups
+            <span className="font-semibold text-[#ffffff]">long-game strategy</span> — not a sprint. The startups
             that succeed aren&apos;t faster. They understand the rules of a different game and play
             accordingly. That&apos;s exactly what I help you do.
           </p>

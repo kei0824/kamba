@@ -1,14 +1,14 @@
 export default function Hero() {
   return (
     <section className="bg-[#ffffff] pt-32 pb-20">
-      <div className="max-w-[860px] mx-auto px-8">
-        <h1 className="text-[36px] md:text-[48px] lg:text-[72px] font-medium leading-[1.1] tracking-[-0.02em] mb-6">
+      <div className="max-w-[1000px] mx-auto px-8">
+        <h1 className="text-[48px] md:text-[64px] lg:text-[72px] font-medium leading-[1.08] tracking-[-0.02em] mb-6">
           Japan isn&apos;t a harder market.
           <br />
           <span className="text-[#6B46C1]">It&apos;s a different game.</span>
         </h1>
 
-        <p className="text-[17px] md:text-[20px] text-[#6B7280] max-w-[520px] leading-[1.65] mt-6 mb-8">
+        <p className="text-[18px] md:text-[20px] text-[#6B7280] max-w-[540px] leading-[1.7] mt-6 mb-10">
           100+ startups. Countless stalled deals. I&apos;ve seen exactly where Japan entries break
           down — and I know how to play the long game the right way.
         </p>

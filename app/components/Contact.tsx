@@ -42,14 +42,14 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left column */}
           <div>
-            <h2 className="text-[28px] font-medium text-[#ffffff] mb-4">
+            <h2 className="text-[32px] font-medium text-[#ffffff] mb-5 leading-[1.2]">
               Ready to play the Japan game the right way?
             </h2>
-            <p className="text-[15px] text-[rgba(255,255,255,0.75)] leading-relaxed mb-6">
+            <p className="text-[16px] text-[rgba(255,255,255,0.75)] leading-relaxed mb-6">
               Whether you&apos;re pre-market or mid-stall, let&apos;s talk about what&apos;s
               blocking you — and whether I can help.
             </p>
-            <p className="text-[12px] text-[rgba(255,255,255,0.5)]">
+            <p className="text-[13px] text-[rgba(255,255,255,0.5)]">
               Typically respond within 48hrs.
               <br />
               Based in Silicon Valley.
@@ -64,7 +64,7 @@ export default function Contact() {
               <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
             </div>
             <div>
-              <label htmlFor="name" className="block text-[12px] text-[rgba(255,255,255,0.6)] mb-1">
+              <label htmlFor="name" className="block text-[12px] font-medium text-[rgba(255,255,255,0.65)] mb-1.5">
                 Name *
               </label>
               <input
@@ -76,7 +76,7 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="company" className="block text-[12px] text-[rgba(255,255,255,0.6)] mb-1">
+              <label htmlFor="company" className="block text-[12px] font-medium text-[rgba(255,255,255,0.65)] mb-1.5">
                 Company *
               </label>
               <input
@@ -88,7 +88,7 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-[12px] text-[rgba(255,255,255,0.6)] mb-1">
+              <label htmlFor="message" className="block text-[12px] font-medium text-[rgba(255,255,255,0.65)] mb-1.5">
                 Your Japan situation
               </label>
               <textarea
@@ -101,7 +101,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={status === "sending"}
-              className="w-full bg-[#ffffff] text-[#6B46C1] text-[14px] font-medium py-3 rounded-md hover:bg-[#EDE9F8] transition-colors disabled:opacity-60"
+              className="w-full bg-[#ffffff] text-[#6B46C1] text-[15px] font-medium py-3.5 rounded-md hover:bg-[#EDE9F8] transition-colors disabled:opacity-60"
             >
               {status === "sending" ? "Sending..." : "Send message"}
             </button>

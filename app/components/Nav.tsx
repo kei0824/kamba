@@ -15,7 +15,7 @@ export default function Nav() {
 
   return (
     <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.92)] backdrop-blur-sm border-b border-[#C9BCEE]">
-      <div className="max-w-[860px] mx-auto px-8 flex items-center justify-between h-16">
+      <div className="max-w-[1000px] mx-auto px-8 flex items-center justify-between h-16">
         <a href="#" className="flex items-center gap-1 text-[#6B46C1] text-xl font-medium">
           <Image src="/apple-touch-icon.png" alt="" width={28} height={28} className="h-7 w-7" priority />
           Kamba

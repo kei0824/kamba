@@ -8,7 +8,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 md:py-[120px] bg-[#ffffff]">
+    <section id="how-it-works" className="py-20 md:py-[100px] bg-[#ffffff]">
       <div className="max-w-[860px] mx-auto px-8">
         <p className="text-[11px] uppercase tracking-[0.15em] text-[#9CA3AF] mb-10">How it works</p>
 
@@ -20,11 +20,11 @@ export default function HowItWorks() {
                 <div className="w-[32px] h-[32px] rounded-full bg-[#EDE9F8] text-[#6B46C1] text-[13px] font-medium flex items-center justify-center mb-3">
                   {step.num}
                 </div>
-                <h3 className="text-[13px] font-medium text-[#1A1A1A] mb-1">{step.title}</h3>
-                <p className="text-[12px] text-[#6B7280] leading-relaxed">{step.desc}</p>
+                <h3 className="text-[14px] font-medium text-[#1A1A1A] mb-1">{step.title}</h3>
+                <p className="text-[13px] text-[#6B7280] leading-relaxed">{step.desc}</p>
               </div>
               {i < steps.length - 1 && (
-                <span className="text-[#C9BCEE] mx-3 mt-2 text-[18px]">&rarr;</span>
+                <span className="text-[#C9BCEE] mx-3 mt-1 text-[20px] shrink-0">&rarr;</span>
               )}
             </div>
           ))}
@@ -38,8 +38,8 @@ export default function HowItWorks() {
                 {step.num}
               </div>
               <div>
-                <h3 className="text-[13px] font-medium text-[#1A1A1A] mb-1">{step.title}</h3>
-                <p className="text-[12px] text-[#6B7280] leading-relaxed">{step.desc}</p>
+                <h3 className="text-[14px] font-medium text-[#1A1A1A] mb-1">{step.title}</h3>
+                <p className="text-[13px] text-[#6B7280] leading-relaxed">{step.desc}</p>
               </div>
             </div>
           ))}

@@ -38,8 +38,8 @@ export default function Services() {
               className="bg-[#ffffff] border border-[#C9BCEE] rounded-lg p-6"
             >
               <p className="text-[11px] font-medium text-[#6B46C1] mb-2">{s.tag}</p>
-              <h3 className="text-[16px] font-medium text-[#1A1A1A] mb-2">{s.title}</h3>
-              <p className="text-[13px] text-[#4B5563] leading-relaxed">{s.body}</p>
+              <h3 className="text-[17px] font-medium text-[#1A1A1A] mb-2">{s.title}</h3>
+              <p className="text-[14px] text-[#4B5563] leading-relaxed">{s.body}</p>
             </div>
           ))}
         </div>
