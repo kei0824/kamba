@@ -23,9 +23,10 @@ jobs:
           script: |
             cd /opt/kamba_corp_site
             git pull origin main
-            cat > .env.local << ENVEOF
-            RESEND_API_KEY=$RESEND_API_KEY
-            CONTACT_TO_EMAIL=$CONTACT_TO_EMAIL
-            ENVEOF
+            export RESEND_API_KEY="$RESEND_API_KEY"
+            export CONTACT_TO_EMAIL="$CONTACT_TO_EMAIL"
             docker compose build --no-cache
             docker compose up -d --force-recreate --remove-orphans
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          CONTACT_TO_EMAIL: ${{ secrets.CONTACT_TO_EMAIL }}
