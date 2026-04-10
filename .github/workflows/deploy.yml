@@ -19,8 +19,13 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           command_timeout: 10m
+          envs: RESEND_API_KEY,CONTACT_TO_EMAIL
           script: |
             cd /opt/kamba_corp_site
             git pull origin main
+            cat > .env.local << ENVEOF
+            RESEND_API_KEY=$RESEND_API_KEY
+            CONTACT_TO_EMAIL=$CONTACT_TO_EMAIL
+            ENVEOF
             docker compose build --no-cache
             docker compose up -d --force-recreate --remove-orphans
