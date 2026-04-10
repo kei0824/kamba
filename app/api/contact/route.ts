@@ -1,8 +1,9 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-const TO_EMAIL = process.env.CONTACT_TO_EMAIL || "kane@kamba.io";
+function getResend() {
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 // --- Rate limiter (in-memory, per IP, resets on restart) ---
 const rateMap = new Map<string, { count: number; resetAt: number }>();
@@ -50,9 +51,11 @@ export async function POST(request: Request) {
     }
 
     // Send email via Resend
+    const resend = getResend();
+    const toEmail = process.env.CONTACT_TO_EMAIL || "km@kamba.io";
     const { error } = await resend.emails.send({
       from: "Kamba Contact <onboarding@resend.dev>",
-      to: TO_EMAIL,
+      to: toEmail,
       subject: `[Kamba] New inquiry from ${name} (${company})`,
       text: [
         `Name: ${name}`,
