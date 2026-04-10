@@ -15,17 +15,17 @@
 }
 
 @theme inline {
-  --color-kamba-purple: var(--kamba-purple);
-  --color-kamba-dark: var(--kamba-dark);
-  --color-kamba-deepest: var(--kamba-deepest);
-  --color-kamba-mid: var(--kamba-mid);
-  --color-kamba-lavender: var(--kamba-lavender);
-  --color-kamba-charcoal: var(--kamba-charcoal);
-  --color-kamba-offwhite: var(--kamba-offwhite);
-  --color-kamba-border: var(--kamba-border);
-  --color-text-primary: var(--text-primary);
-  --color-text-secondary: var(--text-secondary);
-  --color-text-muted: var(--text-muted);
+  --color-kamba-purple: #6B46C1;
+  --color-kamba-dark: #4E2FA0;
+  --color-kamba-deepest: #321A7A;
+  --color-kamba-mid: #A78FE4;
+  --color-kamba-lavender: #EDE9F8;
+  --color-kamba-charcoal: #1A1A1A;
+  --color-kamba-offwhite: #F8F7FC;
+  --color-kamba-border: #C9BCEE;
+  --color-text-primary: #1A1A1A;
+  --color-text-secondary: #6B7280;
+  --color-text-muted: #9CA3AF;
 }
 
 html {
@@ -35,6 +35,6 @@ html {
 body {
   font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
   color: var(--text-primary);
-  background: var(--kamba-offwhite);
+  background: #ffffff;
   line-height: 1.7;
 }
