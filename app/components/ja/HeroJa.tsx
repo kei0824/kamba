@@ -14,8 +14,8 @@ export default function HeroJa() {
         <div className="flex flex-wrap gap-6 md:gap-0 md:divide-x md:divide-[#C9BCEE] mb-10">
           {[
             { number: "100社+", label: "スタートアップ支援実績" },
-            { number: "年間1,000社+", label: "リサーチ・レビュー体制" },
             { number: "VC 100社+", label: "のコネクション" },
+            { number: "マルチセクター", label: "日本企業ネットワーク" },
           ].map((stat) => (
             <div key={stat.label} className="md:px-8 first:md:pl-0 last:md:pr-0">
               <div className="text-[22px] font-medium text-[#6B46C1]">{stat.number}</div>
@@ -37,20 +37,6 @@ export default function HeroJa() {
           >
             Kambaの進め方を見る
           </a>
-        </div>
-
-        <div className="flex flex-wrap gap-2 mt-8">
-          {[
-            "シリコンバレー在住 10年+",
-            "VC・アクセラレーター 100社+のネットワーク",
-          ].map((badge) => (
-            <span
-              key={badge}
-              className="text-[11px] bg-[#EDE9F8] text-[#4E2FA0] px-3 py-1.5 rounded-md"
-            >
-              {badge}
-            </span>
-          ))}
         </div>
       </div>
     </section>

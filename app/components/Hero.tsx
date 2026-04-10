@@ -17,7 +17,7 @@ export default function Hero() {
         <div className="flex flex-wrap gap-6 md:gap-0 md:divide-x md:divide-[#C9BCEE] mb-10">
           {[
             { number: "100+", label: "startups advised" },
-            { number: "10yrs+", label: "in Silicon Valley" },
+            { number: "100+", label: "VC & accelerator connections" },
             { number: "Multi-sector", label: "enterprise network in Japan" },
           ].map((stat) => (
             <div key={stat.label} className="md:px-8 first:md:pl-0 last:md:pr-0">
