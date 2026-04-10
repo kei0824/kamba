@@ -2,9 +2,37 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Kamba \u2014 Japan Market Entry for Global Startups",
+  metadataBase: new URL("https://kamba.io"),
+  title: "Kamba — Japan Market Entry for Global Startups",
   description:
     "I help global startups enter Japan and actually succeed. 100+ startups advised. Fellow at Sierra Ventures. Based in Silicon Valley.",
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "Kamba — Japan Market Entry for Global Startups",
+    description:
+      "I help global startups enter Japan and actually succeed. 100+ startups advised. Fellow at Sierra Ventures. Based in Silicon Valley.",
+    url: "https://kamba.io",
+    siteName: "Kamba",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kamba — Japan Market Entry for Global Startups",
+    description:
+      "I help global startups enter Japan and actually succeed. 100+ startups advised.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({

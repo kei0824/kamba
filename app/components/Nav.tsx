@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const navLinks = [
   { label: "The problem", href: "#problem" },
@@ -15,8 +16,8 @@ export default function Nav() {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
-        <a href="#" className="text-kamba-purple text-xl font-medium">
-          Kamba
+        <a href="#" className="flex items-center">
+          <Image src="/logo.png" alt="Kamba" width={120} height={40} className="h-8 w-auto" priority />
         </a>
 
         {/* Desktop links */}
