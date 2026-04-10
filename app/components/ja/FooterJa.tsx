@@ -8,6 +8,7 @@ export default function FooterJa() {
         <div className="flex gap-6">
           <a href="#" className="text-[12px] text-[#9CA3AF] hover:text-[#6B7280]">プライバシーポリシー</a>
           <a href="#" className="text-[12px] text-[#9CA3AF] hover:text-[#6B7280]">利用規約</a>
+          <a href="/ja/unit-price" className="text-[12px] text-[#9CA3AF] hover:text-[#6B7280]">受託単価表</a>
         </div>
       </div>
     </footer>
