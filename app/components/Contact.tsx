@@ -35,7 +35,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 md:py-[120px] bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <p className="text-xs uppercase tracking-widest text-text-muted mb-10">Get in touch</p>
 

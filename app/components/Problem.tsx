@@ -18,7 +18,7 @@ const patterns = [
 
 export default function Problem() {
   return (
-    <section id="problem" className="py-20">
+    <section id="problem" className="py-20 md:py-[120px] bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <p className="text-xs uppercase tracking-widest text-text-muted mb-8">The problem</p>
 

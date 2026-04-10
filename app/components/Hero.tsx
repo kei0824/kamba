@@ -1,14 +1,14 @@
 export default function Hero() {
   return (
-    <section className="bg-white py-20 md:py-28">
+    <section className="bg-white pt-20 pb-20 md:pt-[120px] md:pb-[120px]">
       <div className="max-w-6xl mx-auto px-6">
-        <h1 className="text-[32px] md:text-[48px] font-medium leading-[1.15] mb-6">
+        <h1 className="text-[36px] md:text-[48px] lg:text-[72px] font-medium leading-[1.1] tracking-[-0.02em] mb-6">
           Japan isn&apos;t a harder market.
           <br />
           <span className="text-kamba-purple">It&apos;s a different game.</span>
         </h1>
 
-        <p className="text-lg text-text-secondary max-w-[560px] mb-8">
+        <p className="text-[17px] md:text-[20px] text-text-secondary max-w-[560px] leading-[1.65] mt-6 mb-10">
           100+ startups. Countless stalled deals. I&apos;ve seen exactly where Japan entries break
           down — and I know how to play the long game the right way.
         </p>
@@ -29,7 +29,7 @@ export default function Hero() {
         </div>
 
         {/* Stats row */}
-        <div className="flex flex-wrap gap-6 md:gap-0 md:divide-x md:divide-gray-200 mb-8">
+        <div className="flex flex-wrap gap-6 md:gap-0 md:divide-x md:divide-gray-200 mt-10 md:mt-16">
           {[
             { number: "100+", label: "startups advised" },
             { number: "10yrs+", label: "in Silicon Valley" },
@@ -39,22 +39,6 @@ export default function Hero() {
               <div className="text-[22px] font-medium text-kamba-purple">{stat.number}</div>
               <div className="text-xs text-text-muted">{stat.label}</div>
             </div>
-          ))}
-        </div>
-
-        {/* Badge row */}
-        <div className="flex flex-wrap gap-2">
-          {[
-            "Fellow \u00B7 Sierra Ventures",
-            "SV Director \u00B7 GATS / Cabinet Office of Japan",
-            "As seen on CNBC",
-          ].map((badge) => (
-            <span
-              key={badge}
-              className="bg-kamba-lavender text-kamba-dark text-xs px-3 py-1 rounded-full"
-            >
-              {badge}
-            </span>
           ))}
         </div>
       </div>

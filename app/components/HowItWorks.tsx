@@ -8,7 +8,7 @@ const steps = [
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="py-20 bg-white">
+    <section id="how-it-works" className="py-20 md:py-[120px] bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <p className="text-xs uppercase tracking-widest text-text-muted mb-10">How it works</p>
 

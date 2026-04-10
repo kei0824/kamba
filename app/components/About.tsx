@@ -19,7 +19,7 @@ const credentials = [
 
 export default function About() {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-20 md:py-[120px] bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <p className="text-xs uppercase tracking-widest text-text-muted mb-8">Why me</p>
 

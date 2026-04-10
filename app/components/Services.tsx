@@ -26,7 +26,7 @@ const sectors = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 bg-white">
+    <section id="services" className="py-20 md:py-[120px] bg-white">
       <div className="max-w-6xl mx-auto px-6">
         <p className="text-xs uppercase tracking-widest text-text-muted mb-8">What I do</p>
 
