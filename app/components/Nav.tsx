@@ -14,7 +14,7 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.92)] backdrop-blur-sm border-b border-[#C9BCEE]">
+    <nav className="sticky top-0 z-50 bg-white border-b border-[#C9BCEE]">
       <div className="max-w-[1000px] mx-auto px-8 flex items-center justify-between h-16">
         <a href="#" className="flex items-center gap-1 text-[#6B46C1] text-xl font-medium">
           <Image src="/apple-touch-icon.png" alt="" width={28} height={28} className="h-7 w-7" priority />
@@ -66,7 +66,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[rgba(255,255,255,0.92)] backdrop-blur-sm border-t border-[#C9BCEE] px-8 py-4 space-y-3">
+        <div className="md:hidden bg-white border-t border-[#C9BCEE] px-8 py-4 space-y-3">
           {navLinks.map((link) => (
             <a
               key={link.href}
