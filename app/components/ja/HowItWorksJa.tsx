@@ -1,18 +1,17 @@
 const steps = [
-  { num: 1, title: "Discovery call", desc: "Understand your product, stage, and Japan hypothesis" },
-  { num: 2, title: "Market fit check", desc: "Which industry, which companies, which entry point" },
-  { num: 3, title: "Introductions", desc: "Warm intros to the right people, not just innovation teams" },
-  { num: 4, title: "POC design", desc: "Structure a pilot that Japanese orgs can approve and fund" },
-  { num: 5, title: "Deal navigation", desc: "Ongoing support through ringi, cycles, and internal politics" },
+  { num: 1, title: "ヒアリング", desc: "貴社の課題・目的・現状を整理" },
+  { num: 2, title: "方針設計", desc: "どのセクター・どの切り口で攻めるか" },
+  { num: 3, title: "候補選定・打診", desc: "ネットワークから最適な相手を特定・接触" },
+  { num: 4, title: "PoC設計", desc: "社内承認が通る形でパイロットを設計" },
+  { num: 5, title: "推進・伴走", desc: "承認〜実装まで継続的に関与" },
 ];
 
-export default function HowItWorks() {
+export default function HowItWorksJa() {
   return (
     <section id="how-it-works" className="py-20 md:py-[100px] bg-[#ffffff]">
       <div className="max-w-[1100px] mx-auto px-8">
-        <p className="text-[11px] uppercase tracking-[0.15em] text-[#9CA3AF] mb-10">How it works</p>
+        <p className="text-[11px] uppercase tracking-[0.15em] text-[#9CA3AF] mb-10">進め方</p>
 
-        {/* Desktop: horizontal flow */}
         <div className="hidden lg:flex items-start justify-between">
           {steps.map((step, i) => (
             <div key={step.num} className="flex items-start">
@@ -30,7 +29,6 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        {/* Mobile/Tablet: vertical stack */}
         <div className="lg:hidden space-y-6">
           {steps.map((step) => (
             <div key={step.num} className="flex items-start gap-4">

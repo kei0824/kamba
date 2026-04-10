@@ -1,36 +1,35 @@
 const services = [
   {
-    tag: "Market Entry",
-    title: "Japan entry strategy",
-    body: "Right partner identification, messaging for Japanese enterprise, POC structure designed to get approved and funded.",
+    tag: "パートナー発掘",
+    title: "カスタマイズ・スカウティング",
+    body: "要件定義から候補リスト作成、Deep Research、初期打診まで一貫して担当。展示会では出会えない「本当に合う相手」を見つけます。",
   },
   {
-    tag: "Access",
-    title: "Enterprise introductions",
-    body: "Warm intros to the right people inside major Japanese corporations \u2014 not just the innovation team.",
+    tag: "戦略支援",
+    title: "イノベーション戦略・体制設計",
+    body: "社内承認プロセスの設計、PoC構造の作り込み、関係部署への社内営業まで。「担当者止まり」を突破する体制を一緒に作ります。",
   },
   {
-    tag: "Deal Support",
-    title: "POC to contract",
-    body: "Navigate ringi, fiscal cycles, and internal politics. Keep deals moving when they would otherwise stall.",
+    tag: "伴走支援",
+    title: "協業・PoC推進",
+    body: "PoC設計から実装、共同事業スキームの構築まで伴走。成果が出るまでKambaが一緒に動きます。",
   },
 ];
 
 const sectors = [
-  "Logistics",
-  "Automotive",
-  "Industrial & Manufacturing",
-  "Agriculture",
-  "Retail",
+  "ロジスティクス",
+  "自動車・モビリティ",
+  "産業・製造",
+  "農業・食品",
+  "小売・流通",
 ];
 
-export default function Services() {
+export default function ServicesJa() {
   return (
     <section id="services" className="py-20 md:py-[120px] bg-[#ffffff]">
       <div className="max-w-[1100px] mx-auto px-8">
-        <p className="text-[11px] uppercase tracking-[0.15em] text-[#9CA3AF] mb-8">What I do</p>
+        <p className="text-[11px] uppercase tracking-[0.15em] text-[#9CA3AF] mb-8">サービス</p>
 
-        {/* Service cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
           {services.map((s) => (
             <div
@@ -44,9 +43,8 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Sectors */}
-        <div>
-          <p className="text-[12px] text-[#9CA3AF] mb-3">Sectors with active network</p>
+        <div className="mb-8">
+          <p className="text-[12px] text-[#9CA3AF] mb-3">対応セクター</p>
           <div className="flex flex-wrap gap-2">
             {sectors.map((sector) => (
               <span

@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function FooterJa() {
   return (
     <footer className="border-t border-[#C9BCEE] py-8 bg-[#F8F7FC]">
       <div className="max-w-[1100px] mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-4">
@@ -6,12 +6,8 @@ export default function Footer() {
           &copy; {new Date().getFullYear()} Kamba. All rights reserved.
         </p>
         <div className="flex gap-6">
-          <a href="#" className="text-[12px] text-[#9CA3AF] hover:text-[#6B7280]">
-            Privacy
-          </a>
-          <a href="#" className="text-[12px] text-[#9CA3AF] hover:text-[#6B7280]">
-            Terms
-          </a>
+          <a href="#" className="text-[12px] text-[#9CA3AF] hover:text-[#6B7280]">プライバシーポリシー</a>
+          <a href="#" className="text-[12px] text-[#9CA3AF] hover:text-[#6B7280]">利用規約</a>
         </div>
       </div>
     </footer>

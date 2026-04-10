@@ -19,7 +19,7 @@ const patterns = [
 export default function Problem() {
   return (
     <section id="problem" className="py-20 md:py-[120px] bg-[#321A7A]">
-      <div className="max-w-[860px] mx-auto px-8">
+      <div className="max-w-[1100px] mx-auto px-8">
         <p className="text-[11px] uppercase tracking-[0.15em] text-[#A78FE4] mb-8">The problem</p>
 
         {/* Quote block */}

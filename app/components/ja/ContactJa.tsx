@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function Contact() {
+export default function ContactJa() {
   const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -37,38 +37,32 @@ export default function Contact() {
   return (
     <section id="contact" className="py-20 md:py-[120px] bg-[#6B46C1]">
       <div className="max-w-[1100px] mx-auto px-8">
-        <p className="text-[11px] uppercase tracking-[0.15em] text-[#A78FE4] mb-10">Get in touch</p>
+        <p className="text-[11px] uppercase tracking-[0.15em] text-[#A78FE4] mb-10">お問い合わせ</p>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Left column */}
           <div>
             <h2 className="text-[32px] font-medium text-[#ffffff] mb-5 leading-[1.2]">
-              Ready to play the Japan game the right way?
+              まずは、現状をお聞かせください。
             </h2>
             <p className="text-[16px] text-[rgba(255,255,255,0.75)] leading-relaxed mb-6">
-              Whether you&apos;re pre-market or mid-stall, let&apos;s talk about what&apos;s
-              blocking you — and whether I can help.
+              「何から始めればいいかわからない」という段階でも構いません。貴社の状況を整理するところから一緒に考えます。
             </p>
             <p className="text-[13px] text-[rgba(255,255,255,0.5)]">
-              Typically respond within 48hrs.
-              <br />
-              Based in Silicon Valley.
+              通常48時間以内にご返信します。<br />
+              拠点：シリコンバレー（日本語対応可）
             </p>
           </div>
 
-          {/* Right column — Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
-            {/* Honeypot — hidden from humans, bots fill it */}
             <div className="absolute opacity-0 -z-10" aria-hidden="true">
-              <label htmlFor="website">Website</label>
-              <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+              <input name="website" type="text" tabIndex={-1} autoComplete="off" />
             </div>
             <div>
-              <label htmlFor="name" className="block text-[12px] font-medium text-[rgba(255,255,255,0.65)] mb-1.5">
-                Name *
+              <label htmlFor="ja-name" className="block text-[12px] font-medium text-[rgba(255,255,255,0.65)] mb-1.5">
+                お名前 *
               </label>
               <input
-                id="name"
+                id="ja-name"
                 name="name"
                 type="text"
                 required
@@ -76,11 +70,11 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="company" className="block text-[12px] font-medium text-[rgba(255,255,255,0.65)] mb-1.5">
-                Company *
+              <label htmlFor="ja-company" className="block text-[12px] font-medium text-[rgba(255,255,255,0.65)] mb-1.5">
+                会社名・部署 *
               </label>
               <input
-                id="company"
+                id="ja-company"
                 name="company"
                 type="text"
                 required
@@ -88,11 +82,11 @@ export default function Contact() {
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-[12px] font-medium text-[rgba(255,255,255,0.65)] mb-1.5">
-                Your Japan situation
+              <label htmlFor="ja-message" className="block text-[12px] font-medium text-[rgba(255,255,255,0.65)] mb-1.5">
+                現在の課題・ご相談内容
               </label>
               <textarea
-                id="message"
+                id="ja-message"
                 name="message"
                 rows={4}
                 className="w-full bg-[#ffffff] border border-[rgba(255,255,255,0.2)] rounded-md px-4 py-2.5 text-[14px] text-[#1A1A1A] focus:outline-none focus:ring-2 focus:ring-[#ffffff]/30 resize-none"
@@ -103,13 +97,13 @@ export default function Contact() {
               disabled={status === "sending"}
               className="w-full bg-[#ffffff] text-[#6B46C1] text-[15px] font-medium py-3.5 rounded-md hover:bg-[#EDE9F8] transition-colors disabled:opacity-60"
             >
-              {status === "sending" ? "Sending..." : "Send message"}
+              {status === "sending" ? "送信中..." : "送信する"}
             </button>
             {status === "success" && (
-              <p className="text-[14px] text-[rgba(255,255,255,0.8)]">Message sent. I&apos;ll be in touch.</p>
+              <p className="text-[14px] text-[rgba(255,255,255,0.8)]">送信しました。48時間以内にご連絡します。</p>
             )}
             {status === "error" && (
-              <p className="text-[14px] text-[#FCA5A5]">Something went wrong. Please try again.</p>
+              <p className="text-[14px] text-[#FCA5A5]">送信に失敗しました。もう一度お試しください。</p>
             )}
           </form>
         </div>
