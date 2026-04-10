@@ -9,7 +9,7 @@ const steps = [
 export default function HowItWorks() {
   return (
     <section id="how-it-works" className="py-20 md:py-[120px] bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-[1100px] mx-auto px-8">
         <p className="text-xs uppercase tracking-widest text-text-muted mb-10">How it works</p>
 
         {/* Desktop: horizontal flow */}

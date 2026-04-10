@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
-    <section className="bg-white pt-20 pb-20 md:pt-[120px] md:pb-[120px]">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="bg-white pt-20 pb-20 md:pt-[120px] md:pb-[80px]">
+      <div className="max-w-[1100px] mx-auto px-8">
         <h1 className="text-[36px] md:text-[48px] lg:text-[72px] font-medium leading-[1.1] tracking-[-0.02em] mb-6">
           Japan isn&apos;t a harder market.
           <br />
