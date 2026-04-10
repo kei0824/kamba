@@ -14,6 +14,7 @@ export default function Contact() {
       name: (form.elements.namedItem("name") as HTMLInputElement).value,
       company: (form.elements.namedItem("company") as HTMLInputElement).value,
       message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+      website: (form.elements.namedItem("website") as HTMLInputElement).value,
     };
 
     try {
@@ -57,6 +58,11 @@ export default function Contact() {
 
           {/* Right column — Form */}
           <form onSubmit={handleSubmit} className="space-y-4">
+            {/* Honeypot — hidden from humans, bots fill it */}
+            <div className="absolute opacity-0 -z-10" aria-hidden="true">
+              <label htmlFor="website">Website</label>
+              <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
+            </div>
             <div>
               <label htmlFor="name" className="block text-xs text-text-secondary mb-1">
                 Name *
