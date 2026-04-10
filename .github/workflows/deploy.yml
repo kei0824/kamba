@@ -23,10 +23,16 @@ jobs:
           script: |
             cd /opt/kamba_corp_site
             git pull origin main
-            export RESEND_API_KEY="$RESEND_API_KEY"
-            export CONTACT_TO_EMAIL="$CONTACT_TO_EMAIL"
             docker compose build --no-cache
-            docker compose up -d --force-recreate --remove-orphans
+            docker compose down
+            docker run -d --name kamba_corp_site-web-1 \
+              --restart unless-stopped \
+              -p 3001:3000 \
+              -e NODE_ENV=production \
+              -e RESEND_API_KEY="$RESEND_API_KEY" \
+              -e CONTACT_TO_EMAIL="$CONTACT_TO_EMAIL" \
+              kamba_corp_site-web
+            docker system prune -f
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           CONTACT_TO_EMAIL: ${{ secrets.CONTACT_TO_EMAIL }}
