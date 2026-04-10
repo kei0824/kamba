@@ -19,20 +19,8 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           command_timeout: 10m
-          envs: RESEND_API_KEY,CONTACT_TO_EMAIL
           script: |
             cd /opt/kamba_corp_site
             git pull origin main
             docker compose build --no-cache
-            docker compose down
-            docker run -d --name kamba_corp_site-web-1 \
-              --restart unless-stopped \
-              -p 3001:3000 \
-              -e NODE_ENV=production \
-              -e RESEND_API_KEY="$RESEND_API_KEY" \
-              -e CONTACT_TO_EMAIL="$CONTACT_TO_EMAIL" \
-              kamba_corp_site-web
-            docker system prune -f
-        env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          CONTACT_TO_EMAIL: ${{ secrets.CONTACT_TO_EMAIL }}
+            docker compose up -d --force-recreate --remove-orphans
