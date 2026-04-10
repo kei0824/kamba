@@ -14,9 +14,9 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b border-gray-100">
-      <div className="max-w-[1100px] mx-auto px-8 flex items-center justify-between h-16">
-        <a href="#" className="flex items-center gap-1 text-kamba-purple text-xl font-medium">
+    <nav className="sticky top-0 z-50 bg-[rgba(255,255,255,0.92)] backdrop-blur-sm border-b border-[#C9BCEE]">
+      <div className="max-w-[860px] mx-auto px-8 flex items-center justify-between h-16">
+        <a href="#" className="flex items-center gap-1 text-[#6B46C1] text-xl font-medium">
           <Image src="/apple-touch-icon.png" alt="" width={28} height={28} className="h-7 w-7" priority />
           Kamba
         </a>
@@ -27,17 +27,17 @@ export default function Nav() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-text-secondary hover:text-text-primary transition-colors"
+              className="text-[14px] text-[#6B7280] hover:text-[#1A1A1A] transition-colors"
             >
               {link.label}
             </a>
           ))}
-          <a href="#contact" className="text-sm text-text-secondary hover:text-text-primary transition-colors">
-            EN | <span className="text-text-muted">JA</span>
+          <a href="#contact" className="text-[14px] text-[#6B7280] hover:text-[#1A1A1A] transition-colors">
+            EN | <span className="text-[#9CA3AF]">JA</span>
           </a>
           <a
             href="#contact"
-            className="bg-kamba-purple text-white text-sm px-5 py-2 rounded-md hover:bg-kamba-dark transition-colors"
+            className="bg-[#6B46C1] text-[#ffffff] text-[14px] px-5 py-2 rounded-md hover:bg-[#4E2FA0] transition-colors"
           >
             Get in touch
           </a>
@@ -50,7 +50,7 @@ export default function Nav() {
           aria-label="Toggle menu"
         >
           <svg
-            className="w-6 h-6 text-text-primary"
+            className="w-6 h-6 text-[#1A1A1A]"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -66,23 +66,23 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white border-t border-gray-100 px-6 py-4 space-y-3">
+        <div className="md:hidden bg-[rgba(255,255,255,0.92)] backdrop-blur-sm border-t border-[#C9BCEE] px-8 py-4 space-y-3">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="block text-sm text-text-secondary hover:text-text-primary"
+              className="block text-[14px] text-[#6B7280] hover:text-[#1A1A1A]"
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
             </a>
           ))}
-          <a href="#contact" className="block text-sm text-text-secondary">
-            EN | <span className="text-text-muted">JA</span>
+          <a href="#contact" className="block text-[14px] text-[#6B7280]">
+            EN | <span className="text-[#9CA3AF]">JA</span>
           </a>
           <a
             href="#contact"
-            className="block text-center bg-kamba-purple text-white text-sm px-5 py-2 rounded-md"
+            className="block text-center bg-[#6B46C1] text-[#ffffff] text-[14px] px-5 py-2 rounded-md"
             onClick={() => setMenuOpen(false)}
           >
             Get in touch

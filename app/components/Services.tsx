@@ -26,39 +26,38 @@ const sectors = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-20 md:py-[120px] bg-white">
-      <div className="max-w-[1100px] mx-auto px-8">
-        <p className="text-xs uppercase tracking-widest text-text-muted mb-8">What I do</p>
+    <section id="services" className="py-20 md:py-[120px] bg-[#ffffff]">
+      <div className="max-w-[860px] mx-auto px-8">
+        <p className="text-[11px] uppercase tracking-[0.15em] text-[#9CA3AF] mb-8">What I do</p>
 
         {/* Service cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mb-10">
           {services.map((s) => (
             <div
               key={s.tag}
-              className="bg-white border border-kamba-border rounded-lg p-5"
+              className="bg-[#ffffff] border border-[#C9BCEE] rounded-lg p-6"
             >
-              <p className="text-[11px] font-medium text-kamba-purple mb-2">{s.tag}</p>
-              <h3 className="text-[15px] font-medium text-text-primary mb-2">{s.title}</h3>
-              <p className="text-[13px] text-text-muted leading-relaxed">{s.body}</p>
+              <p className="text-[11px] font-medium text-[#6B46C1] mb-2">{s.tag}</p>
+              <h3 className="text-[16px] font-medium text-[#1A1A1A] mb-2">{s.title}</h3>
+              <p className="text-[13px] text-[#4B5563] leading-relaxed">{s.body}</p>
             </div>
           ))}
         </div>
 
         {/* Sectors */}
-        <div className="mb-8">
-          <p className="text-xs text-text-muted mb-3">Sectors with active network</p>
+        <div>
+          <p className="text-[12px] text-[#9CA3AF] mb-3">Sectors with active network</p>
           <div className="flex flex-wrap gap-2">
             {sectors.map((sector) => (
               <span
                 key={sector}
-                className="border border-kamba-border text-text-muted text-xs px-3 py-1 rounded-md"
+                className="border border-[#C9BCEE] text-[#6B7280] text-[12px] px-3 py-1 rounded-md"
               >
                 {sector}
               </span>
             ))}
           </div>
         </div>
-
       </div>
     </section>
   );

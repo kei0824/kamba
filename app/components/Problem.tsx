@@ -18,17 +18,17 @@ const patterns = [
 
 export default function Problem() {
   return (
-    <section id="problem" className="py-20 md:py-[120px] bg-white">
-      <div className="max-w-[1100px] mx-auto px-8">
-        <p className="text-xs uppercase tracking-widest text-text-muted mb-8">The problem</p>
+    <section id="problem" className="py-20 md:py-[120px] bg-[#321A7A]">
+      <div className="max-w-[860px] mx-auto px-8">
+        <p className="text-[11px] uppercase tracking-[0.15em] text-[#A78FE4] mb-8">The problem</p>
 
         {/* Quote block */}
-        <div className="border-l-[3px] border-kamba-purple bg-kamba-lavender rounded-r-md p-6 mb-10 max-w-3xl">
-          <p className="italic text-text-primary text-sm leading-relaxed">
+        <div className="border-l-[3px] border-[#ffffff] bg-[rgba(255,255,255,0.08)] rounded-r-md p-6 mb-10 max-w-3xl">
+          <p className="italic text-[#ffffff] text-[18px] leading-relaxed">
             &ldquo;We had the product. We had interest from their innovation team. Then nothing
             happened for months.&rdquo;
           </p>
-          <p className="text-xs text-text-muted mt-3">
+          <p className="text-[13px] text-[#A78FE4] mt-3">
             — A story I hear constantly from startups entering Japan
           </p>
         </div>
@@ -38,20 +38,20 @@ export default function Problem() {
           {patterns.map((p) => (
             <div
               key={p.id}
-              className="bg-kamba-offwhite border border-kamba-border rounded-lg p-5"
+              className="bg-[rgba(255,255,255,0.08)] border border-[rgba(255,255,255,0.12)] rounded-lg p-5"
             >
-              <p className="text-[11px] font-medium text-kamba-mid mb-2">Pattern {p.id}</p>
-              <h3 className="text-sm font-medium text-text-primary mb-2">{p.title}</h3>
-              <p className="text-[13px] text-text-muted leading-relaxed">{p.body}</p>
+              <p className="text-[11px] font-medium text-[#A78FE4] mb-2">Pattern {p.id}</p>
+              <h3 className="text-[16px] font-medium text-[#ffffff] mb-2">{p.title}</h3>
+              <p className="text-[13px] text-[rgba(255,255,255,0.7)] leading-relaxed">{p.body}</p>
             </div>
           ))}
         </div>
 
         {/* Insight block */}
-        <div className="border-l-[3px] border-kamba-purple bg-kamba-lavender rounded-r-md p-6 max-w-3xl">
-          <p className="text-sm text-text-primary leading-relaxed">
+        <div className="border-l-[3px] border-[#A78FE4] bg-[rgba(255,255,255,0.08)] rounded-r-md p-6 max-w-3xl">
+          <p className="text-[15px] text-[rgba(255,255,255,0.85)] leading-relaxed">
             This is why Japan requires a{" "}
-            <span className="font-medium">long-game strategy</span> — not a sprint. The startups
+            <span className="font-medium text-[#ffffff]">long-game strategy</span> — not a sprint. The startups
             that succeed aren&apos;t faster. They understand the rules of a different game and play
             accordingly. That&apos;s exactly what I help you do.
           </p>

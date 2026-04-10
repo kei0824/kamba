@@ -35,21 +35,21 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 md:py-[120px] bg-white">
-      <div className="max-w-[1100px] mx-auto px-8">
-        <p className="text-xs uppercase tracking-widest text-text-muted mb-10">Get in touch</p>
+    <section id="contact" className="py-20 md:py-[120px] bg-[#6B46C1]">
+      <div className="max-w-[860px] mx-auto px-8">
+        <p className="text-[11px] uppercase tracking-[0.15em] text-[#A78FE4] mb-10">Get in touch</p>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Left column */}
           <div>
-            <h2 className="text-lg font-medium text-text-primary mb-4">
+            <h2 className="text-[28px] font-medium text-[#ffffff] mb-4">
               Ready to play the Japan game the right way?
             </h2>
-            <p className="text-sm text-text-muted leading-relaxed mb-6">
+            <p className="text-[15px] text-[rgba(255,255,255,0.75)] leading-relaxed mb-6">
               Whether you&apos;re pre-market or mid-stall, let&apos;s talk about what&apos;s
               blocking you — and whether I can help.
             </p>
-            <p className="text-xs text-text-muted">
+            <p className="text-[12px] text-[rgba(255,255,255,0.5)]">
               Typically respond within 48hrs.
               <br />
               Based in Silicon Valley.
@@ -64,7 +64,7 @@ export default function Contact() {
               <input id="website" name="website" type="text" tabIndex={-1} autoComplete="off" />
             </div>
             <div>
-              <label htmlFor="name" className="block text-xs text-text-secondary mb-1">
+              <label htmlFor="name" className="block text-[12px] text-[rgba(255,255,255,0.6)] mb-1">
                 Name *
               </label>
               <input
@@ -72,11 +72,11 @@ export default function Contact() {
                 name="name"
                 type="text"
                 required
-                className="w-full border border-kamba-border rounded-md px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-kamba-purple/30 focus:border-kamba-purple"
+                className="w-full bg-[#ffffff] border border-[rgba(255,255,255,0.2)] rounded-md px-4 py-2.5 text-[14px] text-[#1A1A1A] focus:outline-none focus:ring-2 focus:ring-[#ffffff]/30"
               />
             </div>
             <div>
-              <label htmlFor="company" className="block text-xs text-text-secondary mb-1">
+              <label htmlFor="company" className="block text-[12px] text-[rgba(255,255,255,0.6)] mb-1">
                 Company *
               </label>
               <input
@@ -84,32 +84,32 @@ export default function Contact() {
                 name="company"
                 type="text"
                 required
-                className="w-full border border-kamba-border rounded-md px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-kamba-purple/30 focus:border-kamba-purple"
+                className="w-full bg-[#ffffff] border border-[rgba(255,255,255,0.2)] rounded-md px-4 py-2.5 text-[14px] text-[#1A1A1A] focus:outline-none focus:ring-2 focus:ring-[#ffffff]/30"
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-xs text-text-secondary mb-1">
+              <label htmlFor="message" className="block text-[12px] text-[rgba(255,255,255,0.6)] mb-1">
                 Your Japan situation
               </label>
               <textarea
                 id="message"
                 name="message"
                 rows={4}
-                className="w-full border border-kamba-border rounded-md px-4 py-2.5 text-sm focus:outline-none focus:ring-2 focus:ring-kamba-purple/30 focus:border-kamba-purple resize-none"
+                className="w-full bg-[#ffffff] border border-[rgba(255,255,255,0.2)] rounded-md px-4 py-2.5 text-[14px] text-[#1A1A1A] focus:outline-none focus:ring-2 focus:ring-[#ffffff]/30 resize-none"
               />
             </div>
             <button
               type="submit"
               disabled={status === "sending"}
-              className="w-full bg-kamba-purple text-white text-sm font-medium py-3 rounded-md hover:bg-kamba-dark transition-colors disabled:opacity-60"
+              className="w-full bg-[#ffffff] text-[#6B46C1] text-[14px] font-medium py-3 rounded-md hover:bg-[#EDE9F8] transition-colors disabled:opacity-60"
             >
               {status === "sending" ? "Sending..." : "Send message"}
             </button>
             {status === "success" && (
-              <p className="text-sm text-green-600">Message sent. I&apos;ll be in touch.</p>
+              <p className="text-[14px] text-[rgba(255,255,255,0.8)]">Message sent. I&apos;ll be in touch.</p>
             )}
             {status === "error" && (
-              <p className="text-sm text-red-600">Something went wrong. Please try again.</p>
+              <p className="text-[14px] text-[#FCA5A5]">Something went wrong. Please try again.</p>
             )}
           </form>
         </div>
