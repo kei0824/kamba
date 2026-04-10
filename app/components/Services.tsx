@@ -59,14 +59,6 @@ export default function Services() {
           </div>
         </div>
 
-        {/* Retainer note */}
-        <div className="bg-kamba-lavender border border-kamba-border rounded-md p-5 max-w-3xl">
-          <p className="text-[13px] text-kamba-dark leading-relaxed">
-            Most clients work with me on an ongoing retainer basis — because Japan is a long game.
-            One intro rarely closes a deal. Sustained presence, follow-through, and timing awareness
-            is what moves things forward.
-          </p>
-        </div>
       </div>
     </section>
   );

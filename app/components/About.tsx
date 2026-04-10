@@ -1,11 +1,11 @@
 const credentials = [
   {
-    label: "Fellow, Sierra Ventures",
-    body: "Active in the SV VC ecosystem, not just adjacent to it.",
+    label: "10+ years in Silicon Valley",
+    body: "Deep local roots. Not just a network on paper \u2014 I\u2019m in the room where decisions are made.",
   },
   {
-    label: "SV Director, GATS",
-    body: "Cabinet Office of Japan backed initiative. Structural access to Japanese government and enterprise.",
+    label: "100+ VC & accelerator connections",
+    body: "Direct access to the investment ecosystem. I know which funds are active in which sectors right now.",
   },
   {
     label: "Both sides of the table",
