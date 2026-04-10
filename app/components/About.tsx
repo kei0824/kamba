@@ -1,7 +1,7 @@
 const credentials = [
   {
-    label: "10+ years in Silicon Valley",
-    body: "Deep local roots. Not just a network on paper \u2014 I\u2019m in the room where decisions are made.",
+    label: "Embedded in the Silicon Valley ecosystem",
+    body: "Not just a network on paper \u2014 I\u2019m in the room where decisions are made.",
   },
   {
     label: "100+ VC & accelerator connections",
@@ -22,13 +22,6 @@ export default function About() {
     <section id="about" className="py-20 md:py-[100px] bg-[#F8F7FC]">
       <div className="max-w-[1100px] mx-auto px-8">
         <p className="text-[11px] uppercase tracking-[0.15em] text-[#9CA3AF] mb-8">Why me</p>
-
-        <div className="mb-8">
-          <h2 className="text-[18px] font-medium text-[#1A1A1A]">
-            Keiichi &ldquo;Kane&rdquo; Matsumoto
-          </h2>
-          <p className="text-[14px] text-[#9CA3AF]">Founder, Kamba</p>
-        </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
           {credentials.map((c) => (

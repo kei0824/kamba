@@ -1,7 +1,7 @@
 const credentials = [
   {
-    label: "シリコンバレー在住10年超",
-    body: "現地に根ざしたネットワークと肌感覚。表面的な繋がりではなく、意思決定の場にいます。",
+    label: "シリコンバレーのエコシステムに深く根ざした",
+    body: "表面的な繋がりではなく、意思決定の場にいます。",
   },
   {
     label: "VC・アクセラレーター 100社+",
@@ -22,13 +22,6 @@ export default function AboutJa() {
     <section id="about" className="py-20 md:py-[100px] bg-[#F8F7FC]">
       <div className="max-w-[1100px] mx-auto px-8">
         <p className="text-[11px] uppercase tracking-[0.15em] text-[#9CA3AF] mb-8">私たちについて</p>
-
-        <div className="mb-8">
-          <h2 className="text-[18px] font-medium text-[#1A1A1A]">
-            松本 恵一（Keiichi &ldquo;Kane&rdquo; Matsumoto）
-          </h2>
-          <p className="text-[14px] text-[#9CA3AF]">Founder, Kamba</p>
-        </div>
 
         <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
           {credentials.map((c) => (
